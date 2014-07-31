@@ -228,7 +228,7 @@ int Items::loadFromOtb(std::string file)
 		}
 	}
 
-	if (Items::dwMajorVersion != 1) {
+	if (Items::dwMajorVersion != 1) { // changed this to 1 in order to load 7.40 maps.
 		std::cout << "Not supported items.otb version." << std::endl;
 		return ERROR_INVALID_FORMAT;
 	}
